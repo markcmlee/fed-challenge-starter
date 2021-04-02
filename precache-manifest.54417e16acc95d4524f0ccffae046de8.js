@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a6b5ee2eb7833d3ca9bd6e513e165180",
+    "revision": "34d8c83e1d73d83c4b25a4b610d5c95f",
     "url": "/fed-challenge-starter/index.html"
   },
   {
-    "revision": "e1230c4ccd865eedabf3",
-    "url": "/fed-challenge-starter/static/css/main.c6a74a23.chunk.css"
+    "revision": "513ca47e1b25d69e43cc",
+    "url": "/fed-challenge-starter/static/css/main.2119af8e.chunk.css"
   },
   {
-    "revision": "36040bd2463c29773040",
-    "url": "/fed-challenge-starter/static/js/2.91dd9dcd.chunk.js"
+    "revision": "6d2cac7fdee3678c3879",
+    "url": "/fed-challenge-starter/static/js/2.f5d02676.chunk.js"
   },
   {
     "revision": "282cad4058e83221804611932e7ca1ed",
-    "url": "/fed-challenge-starter/static/js/2.91dd9dcd.chunk.js.LICENSE.txt"
+    "url": "/fed-challenge-starter/static/js/2.f5d02676.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e1230c4ccd865eedabf3",
-    "url": "/fed-challenge-starter/static/js/main.4090fdca.chunk.js"
+    "revision": "513ca47e1b25d69e43cc",
+    "url": "/fed-challenge-starter/static/js/main.633e4b8e.chunk.js"
   },
   {
     "revision": "ddf4e5f1c600b5f0db56",
@@ -42,10 +42,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e0a7c9061a0e72bed419a8b9eaf2b286",
     "url": "/fed-challenge-starter/static/media/lake-inniscarra-thumb.e0a7c906.jpg"
-  },
-  {
-    "revision": "ee7cd8ed2dcec943251eb2763684fc6f",
-    "url": "/fed-challenge-starter/static/media/logo.ee7cd8ed.svg"
   },
   {
     "revision": "3e82c42342a27af7cce1e89930288333",
