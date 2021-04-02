@@ -75,11 +75,12 @@ body,
   z-index: 10;
   height: 100%;
   width: 40%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 7, 37, 0.6);
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-radius: 0 5px 0 0;
 }
 
 .seriesCount {
