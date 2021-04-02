@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/fed-challenge-starter/static/css/main.2119af8e.chunk.css",
+    "main.css": "/fed-challenge-starter/static/css/main.7e86fdd9.chunk.css",
     "main.js": "/fed-challenge-starter/static/js/main.423d576c.chunk.js",
     "main.js.map": "/fed-challenge-starter/static/js/main.423d576c.chunk.js.map",
     "runtime-main.js": "/fed-challenge-starter/static/js/runtime-main.3972a04a.js",
@@ -8,9 +8,9 @@
     "static/js/2.f5d02676.chunk.js": "/fed-challenge-starter/static/js/2.f5d02676.chunk.js",
     "static/js/2.f5d02676.chunk.js.map": "/fed-challenge-starter/static/js/2.f5d02676.chunk.js.map",
     "index.html": "/fed-challenge-starter/index.html",
-    "precache-manifest.e56b1c0f3f3cb9d16e03946a2e27a12d.js": "/fed-challenge-starter/precache-manifest.e56b1c0f3f3cb9d16e03946a2e27a12d.js",
+    "precache-manifest.323f3dad317df2de942918224ee03f62.js": "/fed-challenge-starter/precache-manifest.323f3dad317df2de942918224ee03f62.js",
     "service-worker.js": "/fed-challenge-starter/service-worker.js",
-    "static/css/main.2119af8e.chunk.css.map": "/fed-challenge-starter/static/css/main.2119af8e.chunk.css.map",
+    "static/css/main.7e86fdd9.chunk.css.map": "/fed-challenge-starter/static/css/main.7e86fdd9.chunk.css.map",
     "static/js/2.f5d02676.chunk.js.LICENSE.txt": "/fed-challenge-starter/static/js/2.f5d02676.chunk.js.LICENSE.txt",
     "static/media/20-minutes-to-toned-thumb.jpg": "/fed-challenge-starter/static/media/20-minutes-to-toned-thumb.1542c118.jpg",
     "static/media/charles-race-thumb.jpg": "/fed-challenge-starter/static/media/charles-race-thumb.00390176.jpg",
@@ -24,7 +24,7 @@
   "entrypoints": [
     "static/js/runtime-main.3972a04a.js",
     "static/js/2.f5d02676.chunk.js",
-    "static/css/main.2119af8e.chunk.css",
+    "static/css/main.7e86fdd9.chunk.css",
     "static/js/main.423d576c.chunk.js"
   ]
 }
