@@ -71,7 +71,7 @@ const Article = ({
           </span>
         </div>
       )}
-      {isActive ? <a className="viewDetails">VIEW DETAILS</a> : null}
+      {isActive ? <p className="viewDetails">VIEW DETAILS</p> : null}
     </article>
   );
 };
