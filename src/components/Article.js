@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+const cx = require("classnames");
 
 const Article = ({
   id,
@@ -12,25 +13,33 @@ const Article = ({
 }) => {
   const [isActive, setIsActive] = useState(false);
 
+  const articleClass = cx({
+    article: true,
+    active: isActive,
+  });
+
   return (
     <article
-      className={isActive ? "article active" : "active"}
+      className={articleClass}
       id={id}
-      onClick={() => setIsActive(!isActive)}
+      onMouseEnter={() => setIsActive(!isActive)}
+      onMouseLeave={() => setIsActive(!isActive)}
     >
-      <img className="thumb" src={thumb} alt={title} />
-      {/* Toggles overlay on trainer image if it is a workout series */}
-      {isSeries && (
-        <div className="series">
-          <p className="seriesCount">{seriesCount}</p>
-          <p className="seriesText">Workouts</p>
-          <img
-            src={require("../assets/icons/series-icon.png")}
-            alt="series icon"
-            className="seriesIcon"
-          />
-        </div>
-      )}
+      <div className="thumbContainer">
+        <img className="thumb" src={thumb} alt={title} />
+        {/* Toggles overlay on trainer image if it is a workout series */}
+        {isSeries && (
+          <div className="series">
+            <p className="seriesCount">{seriesCount}</p>
+            <p className="seriesText">WORKOUTS</p>
+            <img
+              src={require("../assets/icons/seriesIcon.png")}
+              alt="series icon"
+              className="seriesIcon"
+            />
+          </div>
+        )}
+      </div>
 
       <div className="articleInfo">
         <h4 className="articleTitle">{title}</h4>
@@ -43,18 +52,18 @@ const Article = ({
 
       {/* Toggles icons and additional info if it's a race */}
       {!isSeries && (
-        <div className="articleIconInfo">
-          <span className="iconInfoTime">
+        <div className="articleSubInfo">
+          <span className="timeIconInfo">
             <img
-              src={require("../assets/icons/timer-icon.png")}
+              src={require("../assets/icons/timerIcon.png")}
               alt="timer icon"
               className="timerIcon"
             />
             {time}
           </span>
-          <span className="iconInfoDistance">
+          <span className="distanceIconInfo">
             <img
-              src={require("../assets/icons/track-icon.png")}
+              src={require("../assets/icons/trackIcon.png")}
               alt="track icon"
               className="trackIcon"
             />
@@ -62,15 +71,9 @@ const Article = ({
           </span>
         </div>
       )}
-      {isActive ? (
-        <p className="viewDetails">View Details</p>
-      ) : (
-        <p className="viewDetails"></p>
-      )}
+      {isActive ? <a className="viewDetails">VIEW DETAILS</a> : null}
     </article>
   );
-
-  return <article></article>;
 };
 
 export default Article;

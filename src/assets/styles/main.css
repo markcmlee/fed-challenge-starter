@@ -19,3 +19,157 @@ body,
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* ArticleContainer */
+
+.articleContainer {
+  position: fixed;
+  height: 80vh;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Individual articles  */
+
+.article {
+  position: relative;
+  width: 35vh;
+  height: 33vh;
+  border: 1px solid rgb(201, 201, 201);
+  border-radius: 5px;
+  box-shadow: 0px 1px 2px gray;
+  margin-bottom: 5%;
+  transition: box-shadow 0.15s;
+}
+
+.active {
+  box-shadow: -6px 8px 8px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Article and Series Thumbnail */
+
+.thumbContainer {
+  position: relative;
+  height: 60%;
+}
+
+.thumb {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.series {
+  float: right;
+  position: relative;
+  z-index: 10;
+  height: 100%;
+  width: 40%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.seriesCount {
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 900;
+}
+
+.seriesText {
+  margin-top: 10px;
+  font-size: 0.7em;
+  text-align: center;
+  font-weight: 600;
+}
+
+.seriesIcon {
+  display: block;
+  margin-left: 41%;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 19%;
+}
+
+/* Headline and Trainer Image */
+
+.articleTitle {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-left: 2%;
+  max-width: 80%;
+}
+
+.articleInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 10px 0px 10px;
+}
+
+.articleTitle {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.trainer {
+  height: 30px;
+}
+
+/* Article Time and Distance */
+
+.articleSubInfo {
+  display: inline-block;
+  width: 100%;
+  font-size: 0.6em;
+  font-weight: 600;
+}
+
+.timerIcon,
+.trackIcon {
+  height: 10px;
+  padding-right: 5px;
+  vertical-align: middle;
+}
+
+.timeIconInfo {
+  margin-left: 5%;
+  padding-right: 5%;
+}
+
+/* Animation for fade in */
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* View Details Link */
+
+.viewDetails {
+  font-weight: 600;
+  font-size: 0.9em;
+  color: rgb(55, 85, 255);
+  position: absolute;
+  bottom: 3%;
+  left: 5%;
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.15s;
+}

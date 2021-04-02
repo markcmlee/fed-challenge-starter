@@ -19,7 +19,7 @@ const ArticleContainer = () => {
     );
   });
 
-  return <main>{articles}</main>;
+  return <main className="articleContainer">{articles}</main>;
 };
 
 export default ArticleContainer;
